@@ -1,0 +1,12 @@
+python-dotenv
+langchain
+langchain-community
+langchain-core
+langchain-groq
+langchain-google-genai
+langchain-openai
+docx2txt
+ipykernel
+python-multipart
+langsmith
+openai
