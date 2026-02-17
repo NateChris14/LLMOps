@@ -25,6 +25,7 @@ data/
 archive/
 main_archive/
 *.pdf
+*.txt
 
 # Secrets & configs
 .env
