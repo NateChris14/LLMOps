@@ -30,3 +30,14 @@ def load_documents(paths: Iterable[Path]) -> List[Document]:
     except Exception as e:
         log.error("Failed to load documents", error=str(e))
         raise DocumentPortalException("Error loading documents", e) from e
+
+# Adapters
+class FastAPIFileAdapter:
+    """Adapt FastAPI UploadFile to a simple object with .name and .getbuffer()"""
+    def __init__(self, uf: UploadFile):
+        self._uf = uf
+        self.name = uf.filename or "file"
+
+    def getbuffer(self) -> bytes:
+        self._uf.file.seek(0)
+        return self._uf.file.read()
