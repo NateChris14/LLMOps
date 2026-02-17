@@ -10,3 +10,11 @@ ipykernel
 python-multipart
 langsmith
 openai
+structlog
+langchain-huggingface
+sentence-transformers
+fastapi
+pypdf
+faiss-cpu
+pandas
+openevals
