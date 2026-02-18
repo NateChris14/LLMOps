@@ -20,3 +20,4 @@ pypdf
 faiss-cpu
 pandas
 openevals
+pytest
