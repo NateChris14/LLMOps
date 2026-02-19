@@ -28,11 +28,15 @@
           }
         ],
         "secrets": [
-          {
-            "name": "apikeyliveclass",
-            "valueFrom": "arn:aws:secretsmanager:eu-north-1:020759835805:secret:apikeyliveclass-ZRBHAq"
-          }
-  
+        {
+            "name": "GROQ_API_KEY",
+            "valueFrom": "arn:aws:secretsmanager:eu-north-1:020759835805:secret:apikeyliveclass-ZRBHAq:GROQ_API_KEY::"
+        },
+        {
+            "name": "GOOGLE_API_KEY",
+            "valueFrom": "arn:aws:secretsmanager:eu-north-1:020759835805:secret:apikeyliveclass-ZRBHAq:GOOGLE_API_KEY::"
+        }
+        
         ],
         "logConfiguration": {
           "logDriver": "awslogs",
